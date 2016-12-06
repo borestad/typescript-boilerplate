@@ -1,0 +1,26 @@
+{
+  "typescript.check.workspaceVersion": true,
+  "files.trimTrailingWhitespace": true,
+  "terminal.external.osxExec": "Iterm.app",
+  "editor.fontFamily": "Meslo LG M for Powerline",
+  "editor.fontSize": 14,
+  "files.exclude": {
+    "node_modules/": true,
+    "dist/": true,
+    "coverage/": true,
+    ".nyc_output/": true,
+    ".tmp/": true,
+    ".code/": false,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    ".code/*": true
+  }
+}

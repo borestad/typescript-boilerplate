@@ -1,0 +1,38 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "watch": false,
+    "pretty": true,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "listFiles": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noLib": false,
+    "outDir": ".code",
+    "removeComments": true,
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "target": "ES2015",
+    "types": ["mocha", "node"],
+    "allowJs": true
+  },
+  "exclude": [
+    ".tmp",
+    "node_modules",
+    "dist"
+  ],
+  "filesGlob": [
+    "**/*.ts"
+  ],
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2,
+    "newLineCharacter": "\r\n",
+    "convertTabsToSpaces": true
+  }
+}

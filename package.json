@@ -1,0 +1,84 @@
+{
+  "name": "@borestad/typescript-base",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=6.5 <6.6",
+    "vscode": "1.6"
+  },
+  "scripts": {
+    "start": "npm run test:watch",
+    "build": "tsc",
+    "pretest": "rm -rf .code",
+    "test": "tsc && ava",
+    "test:coverage": "tsc && nyc ava",
+    "test:watch": "DEBUG=ava:watcher ava --watch",
+    "test:failfast": "tsc && ava --fail-fast",
+    "test:ci": "snyk test && CI=1 npm test"
+  },
+  "nyc": {
+    "include": [
+      ".code/**/*.{js,jsx}"
+    ],
+    "exclude": [
+      "node_modules/",
+      "dist/"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "report-dir": "./.tmp"
+  },
+  "ava": {
+    "files": [
+      ".code/**/*.test.{js,jsx}",
+      "!**/*.{ts,tsx}"
+    ],
+    "source": [
+      ".code/**/*.{js,jsx}",
+      "!dist/**/*"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": false,
+    "powerAssert": false,
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "dependencies": {
+    "debug": "2.2.0",
+    "lodash": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/chai": "3.4.34",
+    "@types/debug": "0.0.29",
+    "@types/lodash": "^4.14.37",
+    "@types/mocha": "2.2.32",
+    "@types/nock": "8.0.33",
+    "@types/node": "6.0.45",
+    "@types/power-assert": "1.4.29",
+    "@types/should": "8.1.30",
+    "ava": "0.16.0",
+    "chai": "3.5.0",
+    "mocha": "3.1.2",
+    "nyc": "8.3.1",
+    "power-assert": "1.4.1",
+    "pry": "0.6.5",
+    "should": "11.1.1",
+    "snyk": "1.19.1",
+    "ts-node": "1.4.3",
+    "tslint": "3.15.1",
+    "typescript": "2.0.3",
+    "yarn": "^0.16.1"
+  }
+}

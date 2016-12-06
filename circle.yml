@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 6.5.0
+  environment:
+    FOO_BAR: baz
+    BROWSER: chrome
+
+dependencies:
+  cache_directories:
+    - "node_modules"
+    - "~/.npm"
+
+  override:
+    # Install and cache NPM dependencies
+    - npm install
+
+
+test:
+  override:
+    - make test-ci

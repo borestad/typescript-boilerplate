@@ -1,0 +1,32 @@
+{
+  "extends": ["tslint:latest"],
+  "rules": {
+    "indent": [true,
+      "spaces"
+    ],
+    "member-access": [false,
+      "check-accessor"
+    ],
+    "semicolon": [true,
+      "never"
+    ],
+    "quotemark": [true,
+      "single"
+    ],
+    "max-line-length": [false],
+    "curly": false,
+    "no-var-requires": false,
+    "ordered-imports": false,
+    "no-unused-variable": [true],
+    "member-ordering": [false],
+    "object-literal-sort-keys": false,
+    "object-literal-key-quotes": false,
+    "no-shadowed-variable": false,
+    "no-console": [false],
+    "only-arrow-functions": [true, "allow-declarations"],
+    "trailing-comma": [true, {
+      "multiline": "never",
+      "singleline": "never"
+    }]
+  }
+}

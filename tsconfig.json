@@ -19,7 +19,7 @@
     "sourceMap": false,
     "strictNullChecks": true,
     "target": "ES2015",
-    "types": ["mocha", "node"],
+    "types": ["node"],
     "allowJs": true
   },
   "exclude": [

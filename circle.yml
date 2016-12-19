@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 6.5.0
+    version: 7.2.1
   environment:
     FOO_BAR: baz
     BROWSER: chrome
@@ -17,4 +17,4 @@ dependencies:
 
 test:
   override:
-    - make test-ci
+    - npm run test:ci

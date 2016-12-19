@@ -2,12 +2,12 @@ module.exports = function (w) {
 
   return {
     files: [
-      'lib/**/*.ts',
-      '!lib/**/*.test.ts'
+      'src/**/*.ts',
+      '!src/**/*.test.ts'
     ],
 
     tests: [
-      'lib/**/*.test.ts'
+      'src/**/*.test.ts'
     ],
 
     env: {

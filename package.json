@@ -9,8 +9,7 @@
     "start": "npm run test:watch",
     "build": "tsc",
     "pretest": "rm -rf .code",
-    "test": "tsc && ava",
-    "test:coverage": "tsc && nyc ava",
+    "test": "tsc && nyc ava",
     "test:watch": "DEBUG=ava:watcher ava --watch",
     "test:failfast": "tsc && ava --fail-fast",
     "test:ci": "snyk test && CI=1 npm test"
@@ -56,29 +55,29 @@
     ]
   },
   "dependencies": {
-    "debug": "2.2.0",
-    "lodash": "^4.16.4"
+    "debug": "2.4.5",
+    "lodash": "4.17.2"
   },
   "devDependencies": {
     "@types/chai": "3.4.34",
     "@types/debug": "0.0.29",
-    "@types/lodash": "^4.14.37",
-    "@types/mocha": "2.2.32",
-    "@types/nock": "8.0.33",
-    "@types/node": "6.0.45",
+    "@types/lodash": "4.14.43",
+    "@types/mocha": "2.2.33",
+    "@types/nock": "8.2.0",
+    "@types/node": "6.0.52",
     "@types/power-assert": "1.4.29",
     "@types/should": "8.1.30",
-    "ava": "0.16.0",
+    "ava": "0.17.0",
     "chai": "3.5.0",
-    "mocha": "3.1.2",
-    "nyc": "8.3.1",
-    "power-assert": "1.4.1",
+    "mocha": "3.2.0",
+    "nyc": "10.0.0",
+    "power-assert": "1.4.2",
     "pry": "0.6.5",
-    "should": "11.1.1",
-    "snyk": "1.19.1",
-    "ts-node": "1.4.3",
-    "tslint": "3.15.1",
-    "typescript": "2.0.3",
-    "yarn": "^0.16.1"
+    "should": "11.1.2",
+    "snyk": "1.22.1",
+    "ts-node": "1.7.2",
+    "tslint": "4.1.1",
+    "typescript": "2.1.4",
+    "yarn": "0.18.1"
   }
 }

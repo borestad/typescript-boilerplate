@@ -12,6 +12,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
     "noLib": false,
     "outDir": ".code",
     "removeComments": true,

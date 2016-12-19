@@ -17,4 +17,4 @@ dependencies:
 
 test:
   override:
-    - make test-ci
+    - npm run test:ci

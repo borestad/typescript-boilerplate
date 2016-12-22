@@ -3,7 +3,7 @@
   "files.trimTrailingWhitespace": true,
   "terminal.external.osxExec": "Iterm.app",
   "editor.fontFamily": "Meslo LG M for Powerline",
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "files.exclude": {
     "node_modules/": true,
     "dist/": true,

@@ -53,7 +53,7 @@
     "concurrency": 5,
     "failFast": true,
     "tap": false,
-    "powerAssert": false,
+    "powerAssert": true,
     "require": [
       "ts-node/register"
     ]

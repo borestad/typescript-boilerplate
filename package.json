@@ -1,6 +1,7 @@
 {
   "name": "@borestad/typescript-boilerplate",
   "version": "0.0.1",
+  "licence": "MIT",
   "description": "A mean, clean & powerful boilerplate machine using typescript.",
   "engines": {
     "node": ">=6.5 <6.6",

@@ -25,3 +25,21 @@ test('GetterSetter()', t => {
   foo.bar = 'world'
   t.is(foo.bar, 'Hello world')
 })
+
+test('GenericsExample1 - #1 - Using strings', t => {
+  const gen1 = new x.GenericsExample1<string>()
+  gen1.setValue('Hello World')
+  t.is(
+    gen1.getValue().toLowerCase(),
+    'hello world'
+  )
+})
+
+test('GenericsExample1 - #2 - Using numbers', t => {
+  const gen1 = new x.GenericsExample1<number>()
+  gen1.setValue(2.00)
+  t.is(
+    gen1.getValue().valueOf(),
+    2
+  )
+})

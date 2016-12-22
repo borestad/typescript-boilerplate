@@ -27,3 +27,13 @@ export class GetterSetter {
         this._val = val
     }
 }
+
+export class GenericsExample1<T> {
+    value: T
+    setValue(value: T) {
+        this.value = value
+    }
+    getValue(): T {
+        return this.value
+    }
+}

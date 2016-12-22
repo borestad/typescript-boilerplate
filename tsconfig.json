@@ -4,6 +4,7 @@
     "watch": false,
     "pretty": true,
     "declaration": false,
+    "listEmittedFiles": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "inlineSourceMap": true,
@@ -23,6 +24,7 @@
     "allowJs": true
   },
   "exclude": [
+    "./wallaby.js",
     ".tmp",
     "node_modules",
     "dist"

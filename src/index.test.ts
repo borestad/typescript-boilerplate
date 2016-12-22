@@ -1,4 +1,4 @@
-import * as x from './';
+import * as x from './'
 import test from 'ava'
 
 test('should resolve async methods', async t => {

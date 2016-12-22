@@ -22,10 +22,6 @@ test('.spread() - should create a shallow object clone', t => {
 test('GetterSetter()', t => {
   const foo = new x.GetterSetter()
   t.is(foo.bar, 'Hello undefined')
-  // Wallabyjs before: => 'Hello undefined'
-  console.log(foo.bar)
   foo.bar = 'world'
   t.is(foo.bar, 'Hello world')
-  // Wallabyjs after: => 'Hello world'
-  console.log(foo.bar)
 })

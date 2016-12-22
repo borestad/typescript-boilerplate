@@ -1,7 +1,7 @@
 typescript-base
 =========================
 
-[![CircleCI](https://circleci.com/gh/borestad/typescript-boilerplate.svg?style=svg)](https://circleci.com/gh/borestad/typescript-boilerplate)
+[![CircleCI](https://img.shields.io/travis/borestad/typescript-boilerplate.svg)](https://travis-ci.org/borestad/typescript-boilerplate/builds)
 
 # Installation
 

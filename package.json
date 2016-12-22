@@ -63,7 +63,7 @@
   "devDependencies": {
     "@types/chai": "3.4.34",
     "@types/debug": "0.0.29",
-    "@types/lodash": "^4.14.44",
+    "@types/lodash": "4.14.44",
     "@types/node": "6.0.52",
     "@types/power-assert": "1.4.29",
     "ava": "0.17.0",

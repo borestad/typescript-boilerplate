@@ -8,12 +8,13 @@
     "vscode": "1.6"
   },
   "scripts": {
-    "start": "npm run test:watch",
-    "build": "tsc",
+    "start": "yarn run test:watch",
+    "build": "tsc --noUnusedParameters",
     "pretest": "rm -rf .code",
-    "test": "tsc && nyc ava",
+    "test": "yarn run build && nyc ava && yarn run lint",
+    "lint": "tslint src/**/*.ts",
     "test:watch": "DEBUG=ava:watcher ava --watch",
-    "test:failfast": "tsc && ava --fail-fast",
+    "test:failfast": "yarn run build && ava --fail-fast",
     "test:ci": "snyk test && CI=1 npm test",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },

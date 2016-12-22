@@ -1,9 +1,7 @@
 {
+  "tslint.autoFixOnSave": true,
   "typescript.check.workspaceVersion": true,
   "files.trimTrailingWhitespace": true,
-  "terminal.external.osxExec": "Iterm.app",
-  "editor.fontFamily": "Meslo LG M for Powerline",
-  "editor.fontSize": 12,
   "files.exclude": {
     "node_modules/": true,
     "dist/": true,
@@ -21,6 +19,8 @@
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
-    ".code/*": true
+    ".code/*": true,
+    ".nyc_output/*": true,
+    ".tmp/*": true
   }
 }

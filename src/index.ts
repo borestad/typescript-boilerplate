@@ -8,7 +8,7 @@ export function add(a, b): Number {
 /**
  * Example of using the spread operator
  */
-export function spread(obj: Object) {
+export function clone(obj: Object): Object {
   let copy = { ...obj }
   return copy
 }

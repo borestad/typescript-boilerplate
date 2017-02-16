@@ -1,9 +1,7 @@
 {
   "extends": ["tslint-config-standard"],
   "rules": {
-    "indent": [true,
-      "spaces"
-    ],
+    "indent": ["error", 2],
     "member-access": [false,
       "check-accessor"
     ],

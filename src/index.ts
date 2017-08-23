@@ -19,11 +19,11 @@ export function clone (obj: Object): Object {
 export class GetterSetter {
   private _val
 
-  get bar() {
+  get bar () {
     return `Hello ${this._val}`
   }
 
-  set bar(val) {
+  set bar (val) {
     this._val = val
   }
 }

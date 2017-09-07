@@ -1,6 +1,14 @@
 import * as x from './'
 import test from 'ava'
 
+test('ava: pass()', t => {
+  t.pass()
+})
+
+test('ava: fail()', t => {
+
+})
+
 test('should resolve async methods', async t => {
   t.plan(1)
   const bar = Promise.resolve('bar')
@@ -35,11 +43,9 @@ test('GenericsExample1 - #1 - Using strings', t => {
   )
 })
 
+// Using Power Assert Style
 test('GenericsExample1 - #2 - Using numbers', t => {
   const gen1 = new x.GenericsExample1<number>()
   gen1.setValue(2.00)
-  t.is(
-    gen1.getValue().valueOf(),
-    2
-  )
+  t.true(2 === gen1.getValue().valueOf())
 })
